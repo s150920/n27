@@ -15,6 +15,30 @@ app.get('/klasse-objekt-ejs-trainieren',(req, res, next) => {
 
     // ... wird klasse-objekt-ejs-trainieren.ejs gerendert:
 
-    res.render('klasse-objekt-ejs-trainieren', {                                      
+    res.render('klasse-objekt-ejs-trainieren', {      
+        breite : rechteck.breite                                 
     })
 })
+class Schueler{
+    constructor() {
+        this.geschlecht;
+        this.vorname;
+        this.alter;
+    }
+}
+
+class Fußballspieler{
+    constructor(){
+        this.name
+        this.alter
+        this.nummer
+        this.marktwert
+    }
+}
+class Bank{
+    constructor(){
+        this.laenge
+        this.breite
+        this.hoehe
+    }
+}
