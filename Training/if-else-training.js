@@ -13,11 +13,15 @@
 let x = undefined
 let y = 100
 
-if("GW11b".includes("11") && "GW11b".startsWith("G")){
+if(''){
    console.log("Die Prüfung ist WAHR. Es werden die Anweisungen im Rumpf von IF ausgeführt.")
 }else{
    console.log("Die Prüfung ist FALSCH. Es werden die Anweisungen im Rumpf von ELSE ausgeführt.") 
 }
+
+
+
+
 
 // 20. if("GW11b".includes("11")) Die Prüfung ist wahr. Die Methode includes prüft, ob ein String einen anderen enthält. 
 
