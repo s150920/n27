@@ -21,12 +21,13 @@
       <a href="/login">Logout</a>        
       <a href="/impressum">Impressum</a>   
       <a href="mailto:stefan.baeumer@berufskolleg-borken.de"> <i class="fa fa-envelope-o"></i></a>
+      <a href="/profilBearbeiten"><i class="fa fa-id-card-o" aria-hidden="true"></i></a>        
     </nav>
     <form method="POST" action="/kontoAnlegen">          
         <label>Kontonummer:</label>          
-        <input type="number" name="kontonummer">
+        <input type="text" name="kontonummer" pattern="[0-9]{10}" title="Bitte exakt 10 Ziffern eingeben!">
         <label>Kontoart:</label>          
-        <input type="text" name="kontoart">          
+        <input type="text" name="kontoart"  pattern="Giro|Spar">          
         <button>Konto anlegen</button>
     </form>  
     <%= meldung %>
